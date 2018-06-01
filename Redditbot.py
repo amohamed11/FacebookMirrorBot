@@ -15,8 +15,6 @@ for submission in subreddit.new(limit=2):
         config.read("config.ini")
         email = config.get('streamable_info', 'email')
         password = config.get('streamable_info', 'password')
-        
-        # link = 'https://www.facebook.com/leagueoflegends/videos/10154503480095556/'
 
         try:
             response = requests.get('https://api.streamable.com/import?url='+url, auth=(email, password)).json()
