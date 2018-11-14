@@ -11,7 +11,7 @@ Reddit API
 
 The following modules are also used:
 ```
-requests
+spaw
 json
 configparser
 praw
